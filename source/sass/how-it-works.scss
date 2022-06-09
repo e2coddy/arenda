@@ -1,0 +1,101 @@
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablets) {
+        flex-direction: row;
+
+    }
+}
+
+.how-it-works-bg {
+    position: absolute;
+    margin-top: -2px;
+    margin-left: calc(50% - 134px);
+    z-index: 1;
+
+    @media (min-width: $tablets) {
+        margin-left: calc(50% - 264px);
+    }
+
+    @media (min-width: 1170px) {
+        width: 493px;
+        left: calc(50% - 320px);
+        top: 308px;
+        position: absolute;
+        margin-left: 0;
+    }
+
+    @media (min-width: $desktop) {
+        top: 408px;
+    }
+}
+
+.first-step,
+.second-step,
+.third-step {
+    box-shadow: 0px 10px 50px rgba(0, 48, 92, 0.1);
+    border-radius: 25px;
+    background-color: $white;
+    z-index: 10;
+    padding: 30px 20px;
+    position: relative;
+    margin: 40px 0 0 0;
+
+    @media (min-width: $tablets) {
+        width: calc(50% - 95px);
+        padding: 30px;
+        height: 356px;
+
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 60px;
+    }
+}
+
+.first-step,
+.second-step {
+    @media (min-width: $tablets) {
+        margin-right: 20px;
+    }
+
+    @media (min-width: 1170px) {
+        margin-right: 30px;
+    }
+}
+
+.step-pic {
+    margin: 0 auto 5px;
+    display: block;
+
+    @media (min-width: $tablets) {
+        width: 170px;
+        margin: 0 auto 15px;
+    }
+
+}
+
+.step-title,
+.step-text {
+    text-align: center;
+    margin: 0;
+}
+
+.step-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+
+    @media (min-width: $tablets) {
+        margin-bottom: 15px;
+    }
+}
+
+.step-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+}

@@ -1,0 +1,47 @@
+.main-header {
+    margin: 100px auto 0;
+    text-align: center;
+    max-width: 700px;
+
+    @media (min-width: $tablets) {
+        margin-top: 150px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 250px;
+    }
+
+}
+
+.header-title span {
+    font-weight: 300;
+}
+
+.header-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (min-width: $mobile) {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+}
+
+.header-btn {
+    margin-top: 20px;
+    color: $white;
+    border: none;
+    background: radial-gradient(87.68% 100% at 50.19% 100%, #0084FF 0%, #5CB0FF 100%);
+    border-radius: 81px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    width: 214px;
+    height: 51px;
+}

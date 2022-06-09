@@ -1,0 +1,43 @@
+//font
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+//colors
+
+$black-text: #263238;
+
+$white: #FFFFFF;
+
+$button-light: #5CB0FF;
+$button-dark: #0084FF;
+
+//viewports
+
+$desktop: 1920px;
+$tablets: 768px;
+$mobile: 480px;
+$small-mobile: 320px;
+
+.main-body {
+    font-family: 'Rubik', sans-serif;
+    color: $black-text;
+    margin: 0 20px;
+    max-width: 1170px;
+
+    @media (min-width: 1210px) {
+        margin: 0 auto;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

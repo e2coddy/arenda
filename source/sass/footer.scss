@@ -1,0 +1,133 @@
+.main-footer {
+    margin: 100px auto;
+    text-align: center;
+
+    @media (min-width:$tablets) {
+        margin: 110px auto 150px;
+        padding-left: calc(50% - 364px);
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0 70px;
+    }
+}
+
+@media (min-width: $tablets) {
+    .footer-card {
+        display: grid;
+        grid-template-columns: 338px 338px;
+        grid-column-gap: 30px;
+        grid-template-rows: 338px;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: $desktop) {
+    .footer-card {
+        grid-template-columns: 470px 380px;
+        grid-template-rows: 470px;
+    }
+}
+
+.footer-pic {
+    margin: 0 auto 5px;
+    display: block;
+
+    @media (min-width: $mobile) {
+        width: 338px;
+    }
+
+    @media (min-width: $tablets) {
+        margin: 0;
+    }
+
+    @media (min-width: $desktop) {
+        width: 470px;
+    }
+}
+
+.footer-card-grid {
+    @media (min-width: $tablets) {
+        margin-top: 39px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 100px;
+    }
+
+}
+
+.footer-card-title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 0 10px;
+
+    @media (min-width: $tablets) {
+        margin: 50px 0 0;
+        align-self: end;
+        justify-self: start;
+    }
+
+
+}
+
+.footer-card-title span {
+    font-weight: 500;
+}
+
+.footer-card-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 0 30px;
+
+    @media (min-width: $mobile) {
+        margin: 5px 30px 30px;
+    }
+
+    @media (min-width: $tablets) {
+        margin: 10px 0 20px;
+        grid-column: 2 / 3;
+    }
+}
+
+
+@media (max-width: calc($mobile - 1px)) {
+    .for-big-screen {
+        display: none;
+    }
+}
+
+@media (min-width: $mobile) {
+    .for-small-screen {
+        display: none;
+    }
+
+    .for-big-screen {
+        display: inline;
+    }
+}
+
+.footer-btn {
+    border: none;
+    width: 269px;
+    height: 81px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    background: radial-gradient(87.68% 100% at 50.19% 100%, #0084FF 0%, #5CB0FF 100%);
+    box-shadow: 0px 10px 10px rgba(0, 48, 92, 0.1);
+    border-radius: 81px;
+    text-align: center;
+
+    @media (min-width: $tablets) {
+        grid-column: 2 / 3;
+        justify-self: center;
+    }
+}

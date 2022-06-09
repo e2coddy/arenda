@@ -1,0 +1,116 @@
+.bonus {
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 525px 525px;
+        grid-column-gap: 120px;
+    }
+}
+
+.bonus-title {
+    margin: 100px auto 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    @media (min-width: $mobile) {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 250px auto 0;
+    }
+}
+
+.bonus-title span {
+    font-weight: 500;
+}
+
+.bonus-card {
+    margin-top: 40px;
+
+    @media (min-width: $mobile) {
+        margin: 40px 60px 0;
+    }
+
+    @media (min-width: $tablets) {
+        display: grid;
+        grid-template-columns: 240px 255px;
+        grid-column-gap: 40px;
+        grid-template-rows: 120px 120px;
+        padding-left: calc(50% - 267.7px);
+        margin: 40px 0;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 66px 0;
+        padding: 0;
+    }
+}
+
+.bonus-card-pic {
+    margin: 0 auto 10px;
+    display: block;
+
+    @media (min-width: $tablets) {
+        grid-column: 1 / 2;
+        margin: 0;
+    }
+}
+
+.bonus-card-pic_reverse {
+    @media (min-width: $tablets) {
+        grid-column: 2 / 3;
+    }
+
+    @media (min-width: $desktop) {
+        grid-column: 1 / 2;
+    }
+}
+
+.bonus-card-title {
+    margin: 0 0 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    @media (min-width: $tablets) {
+        align-self: end;
+        justify-self: start;
+    }
+}
+
+.bonus-card-title_reverse {
+    @media (min-width: $tablets) {
+        grid-row: 1 / 2;
+    }
+
+    @media (min-width: $desktop) {
+        grid-column: 2 / 3;
+    }
+}
+
+.bonus-card-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0;
+
+    @media (min-width: $tablets) {
+        grid-column: 2 / 3;
+        text-align: start;
+    }
+}
+
+.bonus-card-text_reverse {
+    @media (min-width: $tablets) {
+        grid-column: 1 / 2;
+    }
+
+    @media (min-width: $desktop) {
+        grid-column: 2 / 3;
+    }
+}
